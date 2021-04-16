@@ -1,37 +1,43 @@
-.div1{
-    background-color: burlywood;
+ol li{
+    background-color: yellow;
 }
-.div2{
-    background-color: chocolate;
+.par{
+    color: green;
 }
-.div3{
-    background-color: crimson;
-    height: 100px;
+.primo{
+    text-transform: uppercase;
 }
-.div4{
-    background-color: darkgreen;
+h1, h3{
+    color: red;
 }
-.div5{
-    background-color: darkviolet;
+h1 em, h3 em{
+    font-size: 40px;
+    border: 1px solid black;
 }
-div:hover{
-    border: 5px solid black;
+li{
+    font-size: 20px;
 }
-.a{
-    font-size: 10px;
+li em{
+    font-weight: 900;
 }
-.b{
-    font-family: monospace;
+.azul{
+    color: blue;
 }
-.c{
-    font-weight: 100;
+.java{
+    background-color: pink;
 }
-.d{
-    font-family: sans-serif;
+a:hover{
+    font-weight: 900;
 }
-.e{
-    font-size: 30px;
+.amarelo:hover{
+    color: yellow;
 }
-.a, .c, .e{
-    font-style: italic;
+.verde:hover{
+    color: green;
+}
+.preto:hover{
+    color: black;
+}
+.laranja:hover{
+    color: orange;
 }
