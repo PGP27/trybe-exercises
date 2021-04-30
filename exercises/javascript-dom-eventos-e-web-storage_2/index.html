@@ -81,16 +81,27 @@
         img.src = "https://picsum.photos/200";
         d3.appendChild(img);
         let ul = document.createElement("ul");
+        d4.appendChild(ul);
         for (let i = 1; i <= 10; i++) {
             let li = document.createElement("li");
             li.innerText = i;
-            d4.appendChild(li);
+            ul.appendChild(li);
         }
         for (let i = 1; i <= 3; i++) {
             let h3 = document.createElement("h3");
             h3.innerText = i;
             d1.appendChild(h3);
         }
+        h1.className = "title";
+        for (let i = 0; i < 3; i++) {
+            let list = document.getElementsByTagName("h3");
+            list[i].className = "description";
+        }
+        d1.removeChild(d3);
+        d4.style.marginRight = "auto";
+        d2.parentNode.style.backgroundColor = "green";
+        ul.lastChild.remove();
+        ul.lastChild.remove();
     </script>
   </body>
 </html>
