@@ -67,6 +67,30 @@
         let d2 = document.createElement("div");
         d2.className = "center-content";
         d1.appendChild(d2);
+        let p = document.createElement("p");
+        p.innerText = "Olá mundo";
+        d2.appendChild(p);
+        let d3 = document.createElement("div");
+        d3.className = "left-content";
+        d1.appendChild(d3);
+        let d4 = document.createElement("div");
+        d4.className = "right-content";
+        d1.appendChild(d4);
+        let img = document.createElement("img");
+        img.className = "small-image";
+        img.src = "https://picsum.photos/200";
+        d3.appendChild(img);
+        let ul = document.createElement("ul");
+        for (let i = 1; i <= 10; i++) {
+            let li = document.createElement("li");
+            li.innerText = i;
+            d4.appendChild(li);
+        }
+        for (let i = 1; i <= 3; i++) {
+            let h3 = document.createElement("h3");
+            h3.innerText = i;
+            d1.appendChild(h3);
+        }
     </script>
   </body>
 </html>
