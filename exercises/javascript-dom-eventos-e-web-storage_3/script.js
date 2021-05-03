@@ -99,3 +99,19 @@ function eventFriday() {
         }
     }
 };
+
+let days = document.getElementsByClassName("day");
+for (let i = 0; i < days.length; i++) {
+    days[i].addEventListener("mouseover", overDays);
+    days[i].addEventListener("mouseleave", leaveDays);
+}
+
+function overDays(evento) {
+    let e = evento.target;
+    e.style.fontSize = "40px";
+};
+
+function leaveDays(evento) {
+    let e = evento.target;
+    e.style.fontSize = "20px";
+};
