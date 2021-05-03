@@ -104,6 +104,7 @@ let days = document.getElementsByClassName("day");
 for (let i = 0; i < days.length; i++) {
     days[i].addEventListener("mouseover", overDays);
     days[i].addEventListener("mouseleave", leaveDays);
+    days[i].addEventListener("click", tarefa);
 }
 
 function overDays(evento) {
@@ -134,3 +135,27 @@ function addLegendaCorTarefa(string) {
 };
 
 addLegendaCorTarefa("red");
+
+let div = document.querySelector(".task");
+div.addEventListener("click", clickTarefa);
+
+function clickTarefa(evento) {
+    let e = evento.target;
+    if (e.className === "task selected") {
+        e.className = "task"; 
+    }
+    else {
+        e.className = "task selected"; 
+    }
+    console.log(e.className);
+}
+
+function tarefa(evento) {
+    let e = evento.target;
+    if (div.className === "task selected") {
+        e.style.color = div.style.backgroundColor;
+    }
+    else {
+        e.style.color = "rgb(119,119,119)";
+    }
+}
