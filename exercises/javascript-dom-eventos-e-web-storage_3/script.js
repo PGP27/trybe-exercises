@@ -70,3 +70,32 @@ function eventButton() {
         }
     }
 };
+
+function addFriday(string) {
+    let div = document.querySelector(".buttons-container")
+    let button = document.createElement("button");
+    button.id = "btn-friday";
+    button.innerHTML = string;
+    div.appendChild(button);
+};
+
+addFriday("Sexta-feira");
+
+let button2 = document.getElementById("btn-friday");
+button2.addEventListener("click", eventFriday);
+
+function eventFriday() {
+    let fridays = document.querySelectorAll(".friday");
+    let aux = [4, 11, 18, 25];
+    if (fridays[0].innerText === "Sextou") {
+        for (let i = 0; i < fridays.length; i++) {
+            fridays[i].innerText = aux[i];
+            console.log(aux[i]);
+        }
+    }
+    else {
+        for (let i = 0; i < fridays.length; i++) {
+            fridays[i].innerText = "Sextou";
+        }
+    }
+};
