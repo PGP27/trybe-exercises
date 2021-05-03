@@ -115,3 +115,12 @@ function leaveDays(evento) {
     let e = evento.target;
     e.style.fontSize = "20px";
 };
+
+function addTarefa(string) {
+    let div = document.querySelector(".my-tasks");
+    let span = document.createElement("span");
+    span.innerHTML = string;
+    div.appendChild(span);
+};
+
+addTarefa("Cozinhar");
