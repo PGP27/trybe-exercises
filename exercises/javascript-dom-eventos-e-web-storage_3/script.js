@@ -43,3 +43,13 @@ function addDays() {
 };
 
 addDays();
+
+function addButton(string) {
+    let div = document.querySelector(".buttons-container")
+    let button = document.createElement("button");
+    button.id = "btn-holiday";
+    button.innerHTML = string;
+    div.appendChild(button);
+};
+
+addButton("Feriados");
