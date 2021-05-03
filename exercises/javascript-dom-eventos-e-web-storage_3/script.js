@@ -124,3 +124,13 @@ function addTarefa(string) {
 };
 
 addTarefa("Cozinhar");
+
+function addLegendaCorTarefa(string) {
+    let div = document.querySelector(".my-tasks");
+    let d = document.createElement("div");
+    d.className = "task";
+    d.style.backgroundColor = string;
+    div.appendChild(d);
+};
+
+addLegendaCorTarefa("red");
