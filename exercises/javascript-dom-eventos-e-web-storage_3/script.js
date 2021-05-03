@@ -53,3 +53,20 @@ function addButton(string) {
 };
 
 addButton("Feriados");
+
+let button = document.getElementById("btn-holiday");
+button.addEventListener("click", eventButton);
+
+function eventButton() {
+    let holidays = document.querySelectorAll(".holiday");
+    if (holidays[0].style.backgroundColor === "yellow") {
+        for (let i = 0; i < holidays.length; i++) {
+            holidays[i].style.backgroundColor = "rgb(238,238,238)";
+        }
+    }
+    else {
+        for (let i = 0; i < holidays.length; i++) {
+            holidays[i].style.backgroundColor = "yellow";
+        }
+    }
+};
