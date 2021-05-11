@@ -34,4 +34,9 @@ window.onload = function() {
             option.innerHTML = estados[i];
             select.appendChild(option);
         }
+        let button = document.getElementById("button");
+        button.addEventListener("click", enviar);
+        function enviar(event) {
+            event.preventDefault();
+        }
 }
