@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    margin: 10px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+li {
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    body {
+        font-size: 35px;
+        margin: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        font-size: 20px;
+        margin: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    li {
+        font-size: 17px;
+    }
+
+    .asides {
+        display: flex;
+    }
+
+    aside {
+        margin-right: 100px;
+        min-width: 290px;
+    }
+}
