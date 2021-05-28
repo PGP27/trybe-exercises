@@ -71,3 +71,9 @@ const averageAge = () => {
 }
 
 assert.strictEqual(averageAge(), expectedResult3);
+
+const expectedResult4 = 'As Crônicas de Gelo e Fogo';
+
+const longestNamedBook = () => books.reduce((acc, book) => book.name.length > acc.length ? book.name : acc, books[0].name);
+
+assert.deepStrictEqual(longestNamedBook(), expectedResult4);
